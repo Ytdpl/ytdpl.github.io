@@ -1,97 +1,518 @@
-.l_body {
-  display: grid;
-  grid-template-columns: 1fr minmax(200px, var(--width-main)) 1fr;
-  grid-gap: var(--gap-margin);
-  margin: auto;
-  font-size: var(--fsp);
-}
-.l_body aside {
-  z-index: 8;
-  flex-shrink: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  --width-sidebar: calc(var(--gap-margin) * 2 + var(--gap-padding) * 2 + var(--side-content-width));
-  width: var(--width-sidebar);
-}
-.l_body .l_left {
-  justify-self: right;
-  top: 8px;
-}
-.l_body .l_right {
-  justify-self: left;
-  --gap-margin: 0px;
-  max-height: calc(100% - 8px * 2);
-}
-.l_body .l_right .widgets {
-  height: 100%;
-  overflow: visible;
-}
-@media screen and (max-width: $device-laptop) {
-  .l_body .l_right {
-    --gap-margin: 16px;
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0" theme-name="Stellar" theme-version="1.27.0">
+  
+  <meta name="generator" content="Hexo 7.1.1">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>日语笔记：日语入门 - Re: Yt's Blog</title>
+
+  
+    <meta name="description" content="1. 日语入门 - 日语？能吃吗？绪论 - 初见日语我讲日语的方式或许和许多人不同，可能会偏向知识和理论化。我会从整体概述、文字和语音三方面入手。绪论部分会比较多的和汉语、英语比较。 整体概述日语属于日本语系，是一门黏着语，这和汉英皆不同。汉语属于汉藏语系、汉语语族，是一门分析语（又称孤立语）；英语属于印欧语系、日耳曼语族、西日耳曼语支，通常来说是屈折语，但是在向分析语转化。 黏着语的特征是，句子">
+<meta property="og:type" content="website">
+<meta property="og:title" content="日语入门">
+<meta property="og:url" content="https://ytdpl.github.io/notes/ja-notes/">
+<meta property="og:site_name" content="Re: Yt&#39;s Blog">
+<meta property="og:description" content="1. 日语入门 - 日语？能吃吗？绪论 - 初见日语我讲日语的方式或许和许多人不同，可能会偏向知识和理论化。我会从整体概述、文字和语音三方面入手。绪论部分会比较多的和汉语、英语比较。 整体概述日语属于日本语系，是一门黏着语，这和汉英皆不同。汉语属于汉藏语系、汉语语族，是一门分析语（又称孤立语）；英语属于印欧语系、日耳曼语族、西日耳曼语支，通常来说是屈折语，但是在向分析语转化。 黏着语的特征是，句子">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ytdpl.github.io/images/notes/ja-notes/gojyuuonnzu.png">
+<meta property="article:published_time" content="2024-04-14T01:28:43.184Z">
+<meta property="article:modified_time" content="2024-04-14T01:28:43.184Z">
+<meta property="article:author" content="Ytdpl">
+<meta property="article:tag" content="nothing here">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ytdpl.github.io/images/notes/ja-notes/gojyuuonnzu.png">
+  
+  
+  
+  <meta name="keywords" content="nothing here">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.27.0">
+
+  
+    <link rel="shortcut icon" href="/images/site_icon_c.webp">
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="all" />
+</head>
+<body>
+
+
+
+<div class="l_body s:aa index tech" id="start" layout="note" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><div class="icon"><img no-lazy class="icon" src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2779789.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><a class="title" href="/notes/ja-notes/about"><div class="main" ff="title">日语笔记</div><div class="sub normal cap">いらっしゃい！</div><div class="sub hover cap" style="opacity:0">なに？</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" data-filter="/notes/ja-notes/" placeholder="在 日语笔记 中搜索..."></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item" title="文章" href="/"><span>文章</span></a><a class="nav-item active" title="笔迹" href="/notes/"><span>笔迹</span></a><a class="nav-item" title="有链" href="/links/"><span>有链</span></a><a class="nav-item" title="小窝" href="/nest/"><span>小窝</span></a></nav>
+</div>
+<div class="widgets">
+<widget class="widget-wrapper markdown"><div class="widget-body fs14"><p><span id="hitokoto"></span></p>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+</div></widget>
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">日语入门</span></div><div class="widget-body fs14"><a class="link" href="/notes/ja-notes/about#start"><span class="toc-text">前言</span></a><a class="link active" href="/notes/ja-notes/"><span class="toc-text">日语入门</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="link" href="/notes/ja-notes/gojyuuonn"><span class="toc-text">五十音图</span></a><a class="link" href="/notes/ja-notes/dousi"><span class="toc-text">动词简介</span></a></div></widget>
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/Ytdpl" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/></a></div></footer>
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/notes/ja-notes/about">日语笔记</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2024-04-14T01:28:43.184Z">2024-04-14</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>日语入门</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h1 id="1-日语入门-日语？能吃吗？"><a href="#1-日语入门-日语？能吃吗？" class="headerlink" title="1. 日语入门 - 日语？能吃吗？"></a>1. 日语入门 - 日语？能吃吗？</h1><h2 id="绪论-初见日语"><a href="#绪论-初见日语" class="headerlink" title="绪论 - 初见日语"></a>绪论 - 初见日语</h2><p>我讲日语的方式或许和许多人不同，可能会偏向知识和理论化。我会从整体概述、文字和语音三方面入手。绪论部分会比较多的和汉语、英语比较。</p>
+<h3 id="整体概述"><a href="#整体概述" class="headerlink" title="整体概述"></a>整体概述</h3><p>日语属于日本语系，是一门<strong>黏着语</strong>，这和汉英皆不同。汉语属于汉藏语系、汉语语族，是一门<strong>分析语</strong>（又称孤立语）；英语属于印欧语系、日耳曼语族、西日耳曼语支，通常来说是<strong>屈折语</strong>，但是在向分析语转化。</p>
+<p><strong>黏着语</strong>的特征是，句子中的语法成分主要由成分尾部“黏着”的<strong>助词</strong>及部分词尾变化来表示，构词法主要为在词根上黏着词缀构成新词。这种特征决定了：</p>
+<ul>
+<li>一、日语助词是学习的一大关键。事实上日语的助词并不多，但是每个助词的用法较为复杂，助词之间的辨析也容易混乱，而助词混用极易导致表意不清；</li>
+<li>二、构词较机械，易于举一反三。现代汉语也有许多这样的构词，如“城镇化”由“城镇”+“化”、“工业化”由“工业”+“化”构成；再如，白马、骏马、军马这些词都是这样的构词法的产物，在古代用来表示马的汉字数量极多，如驳(bó)表毛色不纯的马，馰(dí)表额白色的马，骧(xiāng)表后右蹄白色的马。这里有<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/315977474/answer/1714978211">举例</a>。在现代化的过程中汉语同样受到日语的影响，发展出的这种构词，并越来越常见。</li>
+</ul>
+<h3 id="日语文字"><a href="#日语文字" class="headerlink" title="日语文字"></a>日语文字</h3><p>日语文字共有2类：<strong>假名</strong>和<strong>日语汉字</strong>。在日常使用中，同时还有阿拉伯数字、拉丁字母等。</p>
+<p>假名又分<strong>平假名</strong>和<strong>片假名</strong>，平假名由中国古代草书演变而来，字形更柔和随意；片假名由古代楷书演变而来，字形更强硬端庄。一般来说，平假名主要用于标记汉字发音、用作助词和固有词等；而片假名主要用于记录外来语的发音、拟声词以及动植物的专有名词等。</p>
+<p>日语汉字有下面三种情况：</p>
+<ul>
+<li>来自汉语汉字，保留正体（繁体），如<ruby>筆<rt>ひつ</rt></ruby>；</li>
+<li>来自汉语汉字，简化成汉语简体，如 学(がく)</li>
+<li>来自汉语汉字，简化后与正体和简体字形均不同，部分和二简字相似，如 桜(さくら)</li>
+<li>和制汉字，即日本民族自己造的字，如 凧(たこ)</li>
+</ul>
+<p>汉语文字属于表意（象形）文字，英语文字属于表音（字母）文字，而在日语文字中，汉字的部分属于表意的，而其他部分属于表音的。但是日语在本质上还是表音的体系；如同英语，音与意对应，文字用于记录发音，所以日语也可以完全用表音的假名书写而不用汉字，用汉字是为了更快的阅读速度和减少同音词带来的歧义；而汉语本质上是表意的，发音只是用于交流，大江南北方言口音各不相同但是共用同一套汉字体系，发音先是在大脑中转换成汉字、再由汉字转化为含义。</p>
+<blockquote>
+<p>所以说，认为中国人学习日语更轻松我是不认同的。作为汉语母语者最大的便利是，对汉字有着比日语母语者更清晰的认识，以及一些<strong>音读</strong>的汉字（也就是当时日本民族仿照中国人读汉字）与汉语发音有相似性。对汉字的认知或许在阅读上有一定帮助，但是日语同样存在犹如“古今异义”的汉日异义字词，盲目按照汉语理解将导致谬误；同时，要适应汉语日语两套汉字读法，无疑为日语学习造成一定量的困难。而英语等字母表音文字母语者，完全可以将日语当成如法语德语等，只不过所用字母不同，而且日语假名高度<strong>音位正写</strong>，英语母语者完全可以像日本小学生学习日语一样，先用假名学习，再慢慢学习汉字。在书写上，汉语母语者无疑占优；而在发音交流上，甚至有阻碍。</p>
+</blockquote>
+<div class="tag-plugin colorful note" ><div class="title">关于音读和外来语：</div><div class="body"><p>上面提到，片假名用于记录外来语的发音，但是所谓的音读却用平假名标记。一般而言，认为音读汉字词的发音（模仿唐宋时期发音）是用平假名书写的，也可以认为这些发音已经成为了日语的一部分；而模仿现代汉语的发音的汉字词则用片假名标记。</p></div></div>
+
+<h3 id="日语语音"><a href="#日语语音" class="headerlink" title="日语语音"></a>日语语音</h3><p>日语的语音和假名（平假或片假）一一对应（即高度音位正写）。将假名按照辅音元音分类制成表，称为<strong>五十音图</strong>。由于日语语音的演变，现在已经不足50个音，只剩46个。五十音图记录了日语所有的假名，而记忆假名的字形、发音的对应将是日语学习的第一道坎。</p>
+<p>日语发音总体上来说比较轻柔，口型变化不大，<strong>元音较松</strong>（类似英语，紧元音参见法语）；发音简单，语速较快。日语是<strong>音拍等时</strong>的，与汉英亦皆不同，这一点会在将来阐述。</p>
+<p>下图展示了<strong>手写体</strong>的五十音图，左侧为平假名，右侧为片假名。每个方框下方的字母是假名对应的<strong>罗马音</strong>，即用拉丁字母表记的发音。（日语并没有如同俄语的手写-印刷体的高度分化，只有少量字形有差别。）现在不必（也不太可能）马上记住，在下一节中会详细讲解字形、发音以及记忆方法。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/notes/ja-notes/gojyuuonnzu.png" alt="五十音図"></p>
+<h2 id="有用的资源"><a href="#有用的资源" class="headerlink" title="有用的资源"></a>有用的资源</h2><p>这里列举一些我认为对日语学习有帮助的资源。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Bp4y1D747/">B站-阿飞老师的日语课</a>：启蒙课之一，老师5岁开始在日本上学，对日语的了解程度超过母语水平，讲解依托新标日，主要按照课本讲，有一些补充；免费开纠音课；声音很好听（逃</li>
+</ul>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/notes/ja-notes/about">前言</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/notes/ja-notes/gojyuuonn">五十音图</a></div></section></div>
+
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a target="_blank" rel="noopener" href="https://github.com/Ytdpl">@Ytdpl</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0">Stellar 1.27.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<p><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%AA%E8%AE%BA-%E5%88%9D%E8%A7%81%E6%97%A5%E8%AF%AD"><span class="toc-text">绪论 - 初见日语</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E6%A6%82%E8%BF%B0"><span class="toc-text">整体概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E8%AF%AD%E6%96%87%E5%AD%97"><span class="toc-text">日语文字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E8%AF%AD%E8%AF%AD%E9%9F%B3"><span class="toc-text">日语语音</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E7%94%A8%E7%9A%84%E8%B5%84%E6%BA%90"><span class="toc-text">有用的资源</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
   }
-  .laptop-only {
-    display: block !important;
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js`,
+    marked: `https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js`
   }
-  .l_body .l_right {
-    top: 8px;
-    position: fixed;
-    max-height: calc(100% - 8px * 2);
-    transform: translateX(320px);
-    transition: transform 0.38s ease-out;
-    margin: 0;
-    right: 8px;
-    box-shadow: $boxshadow-card-float;
-    z-index: 10;
-    background: var(--site-bg);
-    overflow: auto;
-    --blur-bg: var(--alpha60);
-    --blur-px: 50px;
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+  };
+</script>
+
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
   }
-  .l_body[rightbar] .l_right {
-    transform: translateX(0px);
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.27.0" async></script>
+
+<!-- optional -->
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"></script><script defer src="https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css`,
+    js: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
   }
-  .l_body[rightbar] .main-mask {
-    pointer-events: inherit;
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
   }
-}
-@media screen and (max-width: $device-mobile-max) {
-  .mobile-only {
-    display: block !important;
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || null
+        }
+      });
+    })
   }
-  .l_body {
-    padding: 0;
-    display: block;
-  }
-  .l_body .l_left {
-    position: fixed;
-    transform: translateX(-320px);
-    transition: transform 0.38s ease-out;
-    margin: 0;
-    left: 8px;
-    box-shadow: $boxshadow-card-float;
-    z-index: 10;
-  }
-  .l_body .l_main {
-    max-width: 100%;
-  }
-  .l_body[leftbar] .l_left {
-    transform: translateX(0px);
-  }
-  .l_body[leftbar] .main-mask {
-    opacity: 1;
-    pointer-events: inherit;
-  }
-}
-.main-mask {
-  position: fixed;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.1);
-  z-index: 9;
-  opacity: 0;
-  trans1: opacity;
-}
+</script><script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script><script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
